@@ -1,0 +1,163 @@
+/* Estilos generales para productos */
+#productos {
+  padding: 40px 15px;
+  text-align: center;
+  background-color: #ffffff;
+}
+
+/* Estilos del encabezado de la sección */
+.productos-header {
+  max-width: 600px;
+  margin: 0 auto 30px auto;
+}
+
+.titulo {
+  color: var(--main-color);
+  padding: 4px 12px;
+  font-size: 0.9rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+
+.subtitulo-seccion {
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+}
+
+.descripcion-seccion {
+  font-size: 0.95rem;
+  color: var(--other-color);
+  line-height: 1.5;
+}
+
+/* Contenedor Flexbox para las tarjetas de productos */
+.productos-grid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+/* Estilos para cada tarjeta de producto */
+.producto-card {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  width: 95%;
+  max-width: 300px; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.producto-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+}
+
+.producto-imagen {
+  max-width: 60%;
+  margin-bottom: 15px;
+}
+
+.producto-nombre {
+  font-size: 1.4rem;
+  color: #333333;
+  margin-bottom: 8px;
+}
+
+.producto-descripcion {
+  font-size: 0.9rem;
+  color: var(--other-color);
+  line-height: 1.4;
+  margin-bottom: 15px;
+  flex-grow: 1;
+}
+
+.producto-boton {
+  background-color: var(--main-color);
+  color: #ffffff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.producto-boton:hover {
+  background-color: #053b0cef;
+}
+
+/* Media Queries */
+@media (min-width: 460px)  {
+  #productos {
+    padding: 60px 20px;
+  }
+
+  .productos-header {
+    max-width: 800px;
+    margin-bottom: 50px;
+  }
+
+  .titulo {
+    padding: 5px 15px;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+  }
+
+  .subtitulo-seccion {
+    font-size: 2.8rem;
+  }
+
+  .descripcion-seccion {
+    font-size: 1.1rem;
+  }
+
+  .productos-grid {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    max-width: 1200px;
+  }
+
+  .producto-card {
+    width: 300px;
+    padding: 25px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .producto-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+  }
+
+  .producto-imagen {
+    max-width: 75%;
+  }
+
+  .producto-nombre {
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+  }
+
+  .producto-descripcion {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+
+  .producto-boton {
+    padding: 12px 25px;
+    font-size: 1rem;
+  }
+}

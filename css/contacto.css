@@ -1,0 +1,113 @@
+/* Estilos generales de Contacto */
+#contacto {
+  padding: 50px 20px;
+  text-align: center;
+  background-color: #ffffff;
+}
+
+/* Estilos del encabezado de la sección de Contacto */
+.contacto-header {
+  margin-bottom: 50px;
+}
+
+.titulo-contacto {
+  display: block;
+  color: var(--main-color);
+  font-size: 0.9rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+
+.subtitulo-contacto {
+  font-size: 2.2rem;
+  letter-spacing: 2px;
+}
+
+/* Estilos del formulario */
+.formulario-reserva {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 30px;
+  background-color: var(--second-color);
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Contenedores de campos */
+.form-group,
+.form-group-last {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form-group input,
+.form-group-last input {
+  flex: 1;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1emr;
+  color: #333333;
+  background-color: #f9f9f9;
+  outline: none;
+  transition: border-color 0.3s ease;
+  width: 100%;
+}
+
+.form-group input:focus,
+.form-group-last input:focus {
+  border-color: var(--main-color);
+}
+
+/* Estilos específicos para placeholders */
+.form-group input::placeholder,
+.form-group-last input::placeholder {
+  color: var(--other-color);
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  letter-spacing: 0.5px;
+}
+
+/* Estilos del botón de reserva */
+.boton-reserva {
+  flex: 1;
+  background-color: var(--main-color);
+  color: #ffffff;
+  padding: 15px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease;
+  width: 100%;
+}
+
+.boton-reserva:hover {
+  background-color: #053b0cef;
+}
+
+/* Media Queries */
+@media (min-width: 460px) {
+  /* Tablets */
+  .contacto-header .subtitulo-contacto {
+    font-size: 3rem;
+  }
+}
+
+@media (min-width: 768px) {
+  /* Laptop */
+  .contacto-header .titulo-contacto {
+    font-size: 1.2rem;
+  }
+
+  .form-group,
+  .form-group-last {
+    flex-direction: row;
+    gap: 20px;
+    margin-bottom: 20px;
+  }
+}

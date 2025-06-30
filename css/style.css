@@ -1,0 +1,59 @@
+/* importaciones de estilos */
+@import url(header.css);
+@import url(hero.css);
+@import url(productos.css);
+@import url(review.css);
+@import url(contacto.css);
+@import url(footer.css);
+
+/* Variables de colores y fuentes*/
+:root {
+  --jost-font: "Jost", sans-serif;
+  --main-color: #4b9e22;
+  --text-color: #000000;
+  --second-color: #d9d9d9;
+  --other-color: #83868c;
+}
+
+/* Reseteo y modelo de caja para todos los elementos */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Desplazamiento suave por el documento*/
+html {
+  scroll-behavior: smooth;
+}
+
+/* Estilos generales para el cuerpo del documento */
+body {
+  font-family: var(--jost-font);
+  color: var(--text-color);
+  background-color: var(--second-color);
+}
+
+/* Estilos generales para las listas */
+ul {
+  list-style: none;
+}
+
+/* Estilos generales para los enlaces */
+a {
+  text-decoration: none;
+}
+
+/* Estilos generales para las imágenes */
+img {
+  max-width: 100%;
+}
+
+/* Estilos generales para los apartados header, main y footer */
+header,
+main,
+footer {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 1400px;
+}
