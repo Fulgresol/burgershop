@@ -1,7 +1,7 @@
 // Espera que todos los elementos del DOM esten cargados para ejecutar las funciones
 document.addEventListener("DOMContentLoaded", async () => {
   // Dirección de la API (en este caso ubicación del archivo json)
-  const API_URL = "/json/burger.json";
+  const API_URL = "./json/burger.json";
   // Creamos un array para almacenar los datos de los productos
   let todosProductos = [];
   // Contenedor de las tarjetas de los productos
