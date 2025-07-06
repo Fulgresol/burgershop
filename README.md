@@ -8,7 +8,7 @@ Este proyecto está construido utilizando tecnologías web estándar:
 
 * **HTML5:** Para la estructura y contenido de la página.
 * **CSS3:** Para el diseño y estilo, implementando metodologías **Mobile-First**, **Flexbox** para el layout de componentes y **CSS Grid** para la disposición de rejillas complejas.
-* **JavaScript (Vanilla JS):** Para añadir interactividad al menú de navegación móvil.
+* **JavaScript (Vanilla JS):** Para añadir interactividad al menú de navegación móvil y al carrito de compras.
 
 ## Recursos Gráficos y Herramientas
 
