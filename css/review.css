@@ -1,41 +1,39 @@
-/* Estilos generales de Reseñas */
-#reviews {
-  padding: 80px 20px;
+/* Estilos generales de reseñas */
+#review {
+  padding: 35px 10px;
   text-align: center;
-  background-color: #ffffff;
 }
 
-/* Estilos del encabezado de la sección de Reseñas */
-.reviews-header {
+/* Estilos del encabezado de la sección de reseñas */
+.review-content {
   margin-bottom: 50px;
 }
 
-.titulo-reviews {
-  display: block;
+.review-span {
   color: var(--main-color);
+  padding: 4px 12px;
   font-size: 0.9rem;
   font-weight: bold;
   letter-spacing: 1px;
   margin-bottom: 10px;
 }
 
-.subtitulo-reviews {
+.review-title {
   font-size: 2.2rem;
   margin-bottom: 20px;
 }
 
-/* Contenedor CSS Grid para las tarjetas de reseñas */
-.reviews-grid {
+/* Contenedor Grid para las tarjetas de reseñas */
+.review-grid {
   display: grid;
   grid-template-columns: 1fr;
   gap: 20px;
   max-width: 400px;
-
   margin: 0 auto;
 }
 
 /* Estilos para cada tarjeta de reseña */
-.review-card {
+.reviewer-card {
   border-radius: 8px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   padding: 25px;
@@ -46,24 +44,24 @@
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.review-card:hover {
+.reviewer-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
 }
 
-.review-header {
+.reviewer-header {
   display: flex;
   align-items: center;
   margin-bottom: 15px;
 }
 
-.review-avatar {
+.reviewer-img {
   width: 60px;
   height: 60px;
   border-radius: 50%;
   object-fit: cover;
   margin-right: 15px;
-  border: 3px solid #fff;
+  border: 3px solid #ffffff;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
@@ -75,52 +73,49 @@
   font-size: 1.3rem;
 }
 
-.review-text {
+.reviewer-text {
   font-size: 1rem;
-  color: #444444;
+  color: var(--other-color);
   line-height: 1.6;
   margin-bottom: 15px;
   flex-grow: 1;
 }
 
-.review-rating {
+.reviewer-rating {
   margin-top: auto;
   margin-bottom: 8px;
   color: #ffc107;
   font-size: 1.2rem;
 }
 
-.review-rating .star {
+.reviewer-rating .star {
   margin-right: 2px;
 }
 
-.review-date {
-  font-size: 0.85em;
-  color: #777;
+.reviewer-date {
+  font-size: 0.85rem;
+  color: var(--other-color);
   margin-top: 5px;
 }
 
 /* Media Queries */
 @media (min-width: 460px) {
   /* Tablets */
-  .reviews-grid {
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 25px;
+  #reviews {
+    padding: 60px 20px;
   }
 
-  .subtitulo-reviews {
-    font-size: 2.8rem;
+  .review-grid {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
   }
 }
 
 @media (min-width: 768px) {
   /* Laptop */
-  .reviews-grid {
+  .review-grid {
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 30px;
     max-width: 1100px;
-  }
-  #reviews {
-    padding: 60px 15px;
   }
 }

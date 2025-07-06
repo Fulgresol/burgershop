@@ -1,0 +1,100 @@
+/* Estilos generales de contacto */
+#contact {
+  padding: 35px 10px;
+  text-align: center;
+}
+
+/* Estilos del encabezado de la sección de contacto */
+.contact-content {
+  margin-bottom: 50px;
+}
+
+.contact-span {
+  color: var(--main-color);
+  padding: 4px 12px;
+  font-size: 0.9rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+
+.contact-title {
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+}
+
+/* Estilos del formulario */
+.form-reserve {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 30px;
+  background-color: var(--second-color);
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Contenedores de campos */
+.form-group,
+.form-group-last {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form-group input,
+.form-group-last input {
+  flex: 1;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1emr;
+  color: var(--black-color);
+  background-color: #f9f9f9;
+  outline: none;
+  transition: border-color 0.3s ease;
+  width: 100%;
+}
+
+.form-group input:focus,
+.form-group-last input:focus {
+  border-color: var(--main-color);
+}
+
+/* Estilos específicos para placeholders */
+.form-group input::placeholder,
+.form-group-last input::placeholder {
+  color: var(--other-color);
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  letter-spacing: 0.5px;
+}
+
+/* Estilos del botón de reserva */
+.reverse-button {
+  flex: 1;
+  background-color: var(--main-color);
+  color: var(--white-color);
+  padding: 15px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease;
+  width: 100%;
+}
+
+.reverse-button:hover {
+  background-color: #053b0cef;
+}
+
+@media (min-width: 768px) {
+  /* Laptop */
+  .form-group,
+  .form-group-last {
+    flex-direction: row;
+    gap: 20px;
+    margin-bottom: 20px;
+  }
+}

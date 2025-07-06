@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+  <head>
+    <!-- Metadatos -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Burger Team" />
+    <meta
+      name="title"
+      content="Burger | Las mejores hamburguesas artesanales"
+    />
+    <meta
+      name="description"
+      content="Descubre las hamburguesas más épicas de Burger. Ingredientes frescos, sabores únicos y un ambiente inigualable. ¡Pide online o visítanos!"
+    />
+    <meta
+      name="keywords"
+      content="hamburguesas, burgers, gourmet, artesanales, delivery, comida rápida, papas fritas, Burger, Buenos Aires"
+    />
+    <!--  Font Awesome íconos -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Favicon -->
+    <link
+      rel="shortcut icon"
+      href="./assets/icon/icon.png"
+      type="image/x-icon"
+    />
+    <!-- Título -->
+    <title>Carrito de compras | Burger</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/cart.css" />
+  </head>
+  <body>
+    <!-- Comienzo del encabezado -->
+    <header>
+      <nav id="menu-nav">
+        <div>
+          <a href="./index.html"
+            ><img src="./assets/img/logo.png" alt="Logo-burge" width="130px"
+          /></a>
+        </div>
+      </nav>
+    </header>
+    <!-- Fin del encabezado -->
+    <!-- Comienzo del contenido principal -->
+    <main>
+      <!-- Comienzo de la tabla de productos -->
+      <section id="cart-prudct" class="cart-prudct">
+        <table width="100%">
+          <thead>
+            <tr>
+              <td>ELIMINAR</td>
+              <td>IMAGEN</td>
+              <td>PRODUCTO</td>
+              <td>PRECIO</td>
+              <td>CANTIDAD</td>
+              <td>SUBTOTAL</td>
+            </tr>
+          </thead>
+          <tbody id="product-list">
+            <!-- Los productos se cargan dinámicamente utilizando JavaScript -->
+          </tbody>
+        </table>
+      </section>
+      <!-- Fin de la tabla de productos -->
+      <!-- Comienzo de la tabla de aplicar cupon / total del carrito -->
+      <section id="cart-add" class="cart-add">
+        <div class="cart-coupon">
+          <h3>Aplicar Cupón</h3>
+          <div>
+            <input type="text" placeholder="Ingresa tu cupón" />
+            <button class="normal">Aplicar</button>
+          </div>
+        </div>
+        <div class="cart-price">
+          <h3>Total del Carrito</h3>
+          <table>
+            <tr>
+              <td>Subtotal del Carrito</td>
+              <td class="cart-total">$0.00</td>
+            </tr>
+            <tr>
+              <td>Envío</td>
+              <td>Gratis</td>
+            </tr>
+            <tr>
+              <td><strong>Total</strong></td>
+              <td><strong class="cart-total">$0.00</strong></td>
+            </tr>
+          </table>
+          <button class="cart-pay">Proceder al pago</button>
+        </div>
+      </section>
+      <!-- Fin de la tabla de aplicar cupon / total del carrito -->
+    </main>
+    <!-- Fin del contenido principal -->
+    <!-- Comienzo del pie de página -->
+    <footer>
+      <!-- Comienza la sección redes sociales y contacto -->
+      <section class="social">
+        <div class="social-col">
+          <h4 class="social-title">Contacto</h4>
+          <p>
+            <strong>Dirección:</strong> Av. Principal 123, Bs. As., Argentina
+          </p>
+          <p><strong>Teléfono:</strong> +54 11 1234 5678</p>
+          <p><strong>Horario:</strong> 9:00 - 13:00, Lunes a Viernes</p>
+          <p>
+            <strong>Email:</strong
+            ><a href="mailto:info@burgerbros.com"> info@burger.com</a>
+          </p>
+          <div class="follow">
+            <h4 class="social-title">Seguinos</h4>
+            <div class="icon">
+              <a
+                href="https://www.facebook.com/burger_ok/"
+                target="_blank"
+                aria-label="Facebook de Burger Team"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a
+                href="https://twitter.com/burger_ok/"
+                target="_blank"
+                aria-label="X (Twitter) de Burger Team"
+                ><i class="fa-brands fa-x-twitter"></i
+              ></a>
+              <a
+                href="https://www.instagram.com/burger_ok/"
+                target="_blank"
+                aria-label="Instagram de Burger Team"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a
+                href="https://www.youtube.com/burger_ok/"
+                target="_blank"
+                aria-label="YouTube de Burger Team"
+                ><i class="fab fa-youtube"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <div class="social-col install">
+          <h4 class="social-title">Descargá la App</h4>
+          <p>Desde App Store o Google Play</p>
+          <div class="row">
+            <img src="./assets/img/app.jpg" alt="app-store" />
+            <img src="./assets/img/play.jpg" alt="google-play" />
+          </div>
+          <p>Formas de pago</p>
+          <img src="./assets/img/pay.png" alt="formas-pago" />
+        </div>
+      </section>
+      <!-- Finaliza la sección redes sociales y contacto -->
+      <!-- Comienza la sección marca registrada -->
+      <section class="copyright">
+        <p>&copy; 2025 Burger Team. Todos los derechos reservados.</p>
+      </section>
+      <!-- Finaliza la sección marca registrada -->
+    </footer>
+    <!-- Fin del pie de página -->
+    <!-- JavaScript -->
+    <script src="./js/cart.js"></script>
+  </body>
+</html>

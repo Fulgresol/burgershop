@@ -1,0 +1,148 @@
+/* Estilos generales para productos */
+#product {
+  padding: 35px 10px;
+  text-align: center;
+}
+
+/* Estilos del encabezado de la sección */
+.product-content {
+  max-width: 600px;
+  margin: 0 auto 30px auto;
+}
+
+.product-span {
+  color: var(--main-color);
+  padding: 4px 12px;
+  font-size: 0.9rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+
+.product-title {
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+}
+
+.product-text {
+  font-size: 0.95rem;
+  color: var(--other-color);
+  line-height: 1.5;
+}
+
+/* Contenedor Flexbox para las tarjetas de productos */
+.product-flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Estilos para cada tarjeta de producto */
+.product-card {
+  background-color: var(--white-color);
+  border-radius: 8px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  width: 95%;
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.card-img {
+  max-width: 60%;
+  margin-bottom: 15px;
+}
+
+.card-title {
+  font-size: 1.4rem;
+  color: var(--black-color);
+  margin-bottom: 8px;
+}
+
+.card-text {
+  font-size: 0.9rem;
+  color: var(--other-color);
+  line-height: 1.4;
+  margin-bottom: 10px;
+  flex-grow: 1;
+}
+
+.card-price {
+  font-size: 1.063rem;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.card-button {
+  background-color: var(--main-color);
+  color: var(--white-color);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.card-button:hover {
+  background-color: #053b0cef;
+}
+
+/* Media Queries */
+@media (min-width: 460px) {
+  /* Tablets */
+  #product {
+    padding: 60px 20px;
+  }
+
+  .product-content {
+    max-width: 800px;
+    margin-bottom: 30px;
+  }
+}
+
+@media (min-width: 768px) {
+  /* Laptop */
+  .product-flex {
+    gap: 30px;
+    max-width: 1200px;
+  }
+
+  .product-title {
+    font-size: 2.8rem;
+  }
+
+  .product-text {
+    font-size: 1.1rem;
+  }
+
+  .card-title {
+    font-size: 1.5rem;
+  }
+
+  .card-text {
+    font-size: 1rem;
+  }
+
+  .card-price {
+    font-size: 1.1rem;
+  }
+
+  .card-button {
+    font-size: 1rem;
+  }
+}

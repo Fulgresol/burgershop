@@ -1,149 +1,86 @@
 /* Estilos generales del footer */
 footer {
-  background-color: #333333;
-  color: #ffffff;
-  padding: 30px 15px;
-  font-size: 0.9rem;
-  text-align: center;
+  background-color: var(--black-color);
+  color: var(--white-color);
+  padding: 40px 80px;
 }
 
-/* Contenedor principal de las columnas */
-.footer-container {
+.social {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 1px;
+}
+
+.social-col {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  gap: 30px;
-  max-width: 900px;
-  margin: 0 auto 20px auto;
+  align-items: flex-start;
+  margin-bottom: 20px;
 }
 
-/* Estilos de las columnas individuales */
-.footer-col {
-  width: 100%;
-  padding: 0;
-  text-align: center;
+.social-col p {
+  font-size: 0.813rem;
+  margin: 0 0 8px 0;
 }
 
-.footer-col h3 {
-  color: var(--main-color);
-  font-size: 1.2rem;
-  margin-bottom: 15px;
-  text-transform: uppercase;
-  letter-spacing: 1px;
+.social-col a {
+  font-size: 0.813rem;
+  color: var(--white-color);
+  margin-bottom: 10px;
 }
 
-/* Estilos de los iconos de redes sociales */
-.social-icons {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 15px;
+.social-title {
+  font-size: 0.875rem;
+  padding-bottom: 4px;
 }
 
-.social-icons a i {
-  color: #ffffff;
-  transition: color 0.3s ease;
-  display: flex;
-  align-items: center;
-  gap: 15px;
-  font-size: 1.2rem;
+.follow {
+  margin-top: 20px;
 }
 
-.social-icons a:hover {
-  color: var(--main-color);
+.follow i {
+  color: var(--white-color);
+  padding-right: 4px;
+  cursor: pointer;
 }
 
-.social-icons a::before {
-  margin-right: 8px;
-}
-
-/* Estilos de la información de contacto */
-.contact-info p {
-  margin-bottom: 8px; /* Menos espacio entre líneas */
-  line-height: 1.4;
-}
-
-.contact-info a {
-  color: #ffffff;
-  transition: color 0.3s ease;
-}
-
-.contact-info a:hover {
-  color: var(--main-color);
+.row img {
+  margin: 10px 0 15px 0;
+  border-radius: 6px;
 }
 
 /* Estilos del pie de página inferior */
-.footer-bottom {
-  max-width: 900px;
-  margin: 0 auto;
-  text-align: center;
+.copyright {
   padding-top: 20px;
   border-top: 1px solid #555;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 15px;
-}
-
-.footer-bottom p {
-  margin: 0;
   font-size: 0.85rem;
-  color: #ffffff;
+  color: var(--white-color);
+  text-align: center;
 }
 
 /* Media Queries */
 @media (min-width: 768px) {
-   footer {
-    padding: 40px 20px;
+  /* Laptop */
+  .social {
+    gap: 25px;
+  }
+
+  .social-col p {
+    font-size: 0.875rem;
+  }
+
+  .social-col a {
+    font-size: 1rem;
+  }
+
+  .social-title {
+    font-size: 1rem;
+  }
+
+  .copyright {
+    max-width: 900px;
+    margin: 0 auto;
     font-size: 0.95rem;
-  }
-
-  .footer-container {
-    flex-direction: row;
-    justify-content: space-around;
-    margin-bottom: 30px;
-    padding-bottom: 20px;
-    border-bottom: 1px solid #555;
-  }
-
-  .footer-col {
-    flex: 1;
-    min-width: 280px;
-    padding: 15px;
-    text-align: left;
-  }
-
-  .footer-col h3 {
-    font-size: 1.3rem;
-    margin-bottom: 20px;
-  }
-
-  .social-icons {
-    justify-content: flex-start;
-    gap: 30px;
-  }
-
-  .social-icons li {
-    margin-bottom: 10px;
-  }
-
-  .social-icons a i {
-    font-size: 1.5rem;
-  }
-
-  .contact-info p {
-    margin-bottom: 10px;
-    line-height: 1.5;
-  }
-
-  .footer-bottom {
-    flex-direction: row;
-    justify-content:space-around;
-    padding-top: 15px;
-    border-top: none;
-  }
-
-  .footer-bottom p {
-    font-size: 0.9rem;
   }
 }

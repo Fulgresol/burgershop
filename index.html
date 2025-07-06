@@ -4,7 +4,7 @@
     <!-- Metadatos -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="author" content="Burger Bros Team" />
+    <meta name="author" content="Burger Team" />
     <meta
       name="title"
       content="Burger | Las mejores hamburguesas artesanales"
@@ -35,7 +35,7 @@
     <!-- Favicon -->
     <link
       rel="shortcut icon"
-      href="/assets/icon/icon-1.png"
+      href="./assets/icon/icon.png"
       type="image/x-icon"
     />
     <!-- Título -->
@@ -46,24 +46,28 @@
   <body>
     <!-- Comienzo del encabezado -->
     <header>
-      <nav id="menu-navegacion">
-        <div class="logo">
-          <img src="assets/img/logo-1.jpg" alt="Logo-Burber" />
-          <span>Burguer</span>
+      <nav id="menu-nav">
+        <div>
+          <a href="#"
+            ><img src="./assets/img/logo.png" alt="Logo-burge" width="130px"
+          /></a>
         </div>
-        <ul class="nav-links" id="navLinks">
+        <ul id="links-nav" class="links-nav">
           <li><a href="#">Inicio</a></li>
           <li><a href="#productos">Menú</a></li>
           <li><a href="#reviews">Reseñas</a></li>
           <li><a href="#contacto">Contacto</a></li>
         </ul>
-        <div class="menu-toggle" id="mobile-menu">
+        <div id="toggle-nav" class="toggle-nav">
           <span class="bar"></span>
           <span class="bar"></span>
           <span class="bar"></span>
         </div>
-        <div class="nav-icons">
-          <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+        <div class="icon-nav">
+          <a href="./cart.html"
+            ><i class="fa-solid fa-cart-shopping cart-icon"></i
+            ><span id="cart-count" class="cart-count">0</span></a
+          >
         </div>
       </nav>
     </header>
@@ -73,193 +77,119 @@
       <!-- Comienzo de la sección hero -->
       <section id="hero">
         <div class="hero-content">
-          <p class="hero-title">Las Mejores Hamburguesas</p>
+          <h1 class="hero-title">Las Mejores Hamburguesas</h1>
           <p class="hero-text">Hechas con ingredientes frescos</p>
         </div>
       </section>
       <!-- Finaliza la sección hero -->
       <!-- Comienza la sección productos -->
-      <section id="productos">
-        <div class="productos-header">
-          <span class="titulo">LAS HAMBURGUESAS MÁS DELICIOSAS</span>
-          <h2 class="subtitulo-seccion">ELIJA Y DISFRUTE</h2>
-          <p class="descripcion-seccion">
+      <section id="product">
+        <div class="product-content">
+          <span class="product-span">LAS HAMBURGUESAS MÁS DELICIOSAS</span>
+          <h2 class="product-title">ELIJA Y DISFRUTE</h2>
+          <p class="product-text">
             Ya sea que anheles sabores clásicos o combinaciones atrevidas, aquí
             comienza tu viaje culinario. Satisface tus antojos y saborea cada
             bocado mientras creas tu experiencia de hamburguesa personalizada
             con Burger.
           </p>
         </div>
-        <div class="productos-grid">
-          <div class="producto-card">
-            <img
-              src="assets/img/order-1.jpg"
-              alt="Hamburguesa de Pollo"
-              class="producto-imagen"
-            />
-            <h3 class="producto-nombre">Hamburguesa de Pollo</h3>
-            <p class="producto-descripcion">
-              Hunde tus dientes en la perfección atemporal de nuestra
-              hamburguesa de pollo, una experiencia que nunca pasa de moda.
-            </p>
-            <button class="producto-boton">PEDIR AHORA</button>
-          </div>
-          <div class="producto-card">
-            <img
-              src="assets/img/order-2.jpg"
-              alt="Hamburguesa Veggie"
-              class="producto-imagen"
-            />
-            <h3 class="producto-nombre">Hamburguesa Veggie</h3>
-            <p class="producto-descripcion">
-              Disfruta los vibrantes sabores de nuestra hamburguesa veggie, una
-              celebración de frescura y bondad.
-            </p>
-            <button class="producto-boton">PEDIR AHORA</button>
-          </div>
-          <div class="producto-card">
-            <img
-              src="assets/img/order-3.jpg"
-              alt="Hamburguesa BBQ"
-              class="producto-imagen"
-            />
-            <h3 class="producto-nombre">Hamburguesa BBQ</h3>
-            <p class="producto-descripcion">
-              Deléitate con una sinfonía de sabores ahumados y salados con
-              nuestra Hamburguesa BBQ, a la parrilla y cubierta con tocino
-              crujiente.
-            </p>
-            <button class="producto-boton">PEDIR AHORA</button>
-          </div>
-          <div class="producto-card">
-            <img
-              src="assets/img/order-4.jpg"
-              alt="Hamburguesa Doble Carne y Queso"
-              class="producto-imagen"
-            />
-            <h3 class="producto-nombre">Hamburguesa Doble Carne y Queso</h3>
-            <p class="producto-descripcion">
-              El doble de sabor, el doble de placer. Dos medallones de carne
-              jugosa, fundidos con doble capa de queso cheddar.
-            </p>
-            <button class="producto-boton">PEDIR AHORA</button>
-          </div>
-          <div class="producto-card">
-            <img
-              src="assets/img/order-5.jpg"
-              alt="Hamburguesa con Huevo Frito"
-              class="producto-imagen"
-            />
-            <h3 class="producto-nombre">Hamburguesa con Huevo Frito</h3>
-            <p class="producto-descripcion">
-              Una explosión de sabor. Nuestra clásica hamburguesa de carne,
-              coronada con un huevo frito perfecto y yema escurridiza.
-            </p>
-            <button class="producto-boton">PEDIR AHORA</button>
-          </div>
-          <div class="producto-card">
-            <img
-              src="assets/img/order-6.jpg"
-              alt="Hamburguesa Clásica"
-              class="producto-imagen"
-            />
-            <h3 class="producto-nombre">Hamburguesa Clásica</h3>
-            <p class="producto-descripcion">
-              La simplicidad perfecta. Carne de res, lechuga fresca, cebolla
-              crujiente y queso derretido en un pan suave.
-            </p>
-            <button class="producto-boton">PEDIR AHORA</button>
-          </div>
+        <div id="product-flex" class="product-flex">
+          <!-- Los productos se cargan dinámicamente utilizando JavaScript -->
         </div>
       </section>
       <!-- Finaliza la sección productos -->
       <!-- Comienza la sección reseña -->
-      <section id="reviews">
-        <div class="reviews-header">
-          <span class="titulo-reviews">LO QUE DICEN NUESTROS CLIENTES</span>
-          <h2 class="subtitulo-reviews">RESEÑAS DE COMENSALES</h2>
+      <section id="review">
+        <div class="review-content">
+          <span class="review-span">LO QUE DICEN NUESTROS CLIENTES</span>
+          <h2 class="review-title">RESEÑAS DE COMENSALES</h2>
         </div>
-        <div class="reviews-grid">
-          <div class="review-card">
-            <div class="review-header">
+        <div class="review-grid">
+          <div class="reviewer-card">
+            <div class="reviewer-header">
               <img
                 src="assets/img/persona-1.jpg"
-                alt="Avatar"
-                class="review-avatar"
+                alt="avatar-uno"
+                class="reviewer-img"
               />
               <div class="reviewer-info">
                 <h3 class="reviewer-name">Sofía G.</h3>
               </div>
             </div>
-            <p class="review-text">
+            <p class="reviewer-text">
               "¡Las hamburguesas de Burger son simplemente espectaculares! La
               carne es jugosa, los ingredientes frescos y el sabor es
               inigualable. Mi favorita es la Doble Carne y Queso. ¡Volveré
               pronto!"
             </p>
-            <div class="review-rating">
+            <div class="reviewer-rating">
               <span class="star">&#9733;</span><span class="star">&#9733;</span
               ><span class="star">&#9733;</span><span class="star">&#9733;</span
               ><span class="star">&#9733;</span>
             </div>
-            <span class="review-date">Reseñado el 18/05/2025</span>
+            <span class="reviewer-date">Reseñado el 18/05/2025</span>
           </div>
-          <div class="review-card">
-            <div class="review-header">
+          <div class="reviewer-card">
+            <div class="reviewer-header">
               <img
                 src="assets/img/persona-2.jpg"
-                alt="Avatar"
-                class="review-avatar"
+                alt="avatar-dos"
+                class="reviewer-img"
               />
               <div class="reviewer-info">
                 <h3 class="reviewer-name">Martín R.</h3>
               </div>
             </div>
-            <p class="review-text">
+            <p class="reviewer-text">
               "Probé la Hamburguesa BBQ y quedé impresionado. La combinación de
               sabores es perfecta y el tocino crujiente le da un toque
               magistral. La atención es rápida y el lugar tiene muy buena onda."
             </p>
-            <div class="review-rating">
+            <div class="reviewer-rating">
               <span class="star">&#9733;</span><span class="star">&#9733;</span
               ><span class="star">&#9733;</span><span class="star">&#9733;</span
               ><span class="star">&#9733;</span>
             </div>
-            <span class="review-date">Reseñado el 20/05/2025</span>
+            <span class="reviewer-date">Reseñado el 20/05/2025</span>
           </div>
-          <div class="review-card">
-            <div class="review-header">
+          <div class="reviewer-card">
+            <div class="reviewer-header">
               <img
                 src="assets/img/persona-3.jpg"
-                alt="Avatar"
-                class="review-avatar"
+                alt="avatar-tres"
+                class="reviewer-img"
               />
               <div class="reviewer-info">
                 <h3 class="reviewer-name">Andrea P.</h3>
               </div>
             </div>
-            <p class="review-text">
+            <p class="reviewer-text">
               "¡Increíble la Hamburguesa Veggie! Es difícil encontrar opciones
               vegetarianas tan deliciosas y bien pensadas. Fresca, llena de
               sabor y muy satisfactoria. ¡Burger es mi nuevo lugar favorito!"
             </p>
-            <div class="review-rating">
+            <div class="reviewer-rating">
               <span class="star">&#9733;</span><span class="star">&#9733;</span
               ><span class="star">&#9733;</span><span class="star">&#9733;</span
               ><span class="star">&#9733;</span>
             </div>
-            <span class="review-date">Reseñado el 22/05/2025</span>
+            <span class="reviewer-date">Reseñado el 22/05/2025</span>
           </div>
         </div>
       </section>
       <!-- Finaliza la sección reseña -->
       <!-- Comienzo de la sección contacto -->
-      <section id="contacto">
-        <div class="contacto-header">
-          <span class="titulo-contacto">RESERVACIÓN</span>
-          <h2 class="subtitulo-contacto">RESERVA TU MESA</h2>
+      <section id="contact">
+        <div class="contact-content">
+          <span class="contact-span">RESERVACIÓN</span>
+          <h2 class="contact-title">RESERVA TU MESA</h2>
         </div>
-        <form class="formulario-reserva">
+        <form
+          action="https://formspree.io/f/xgvyzqjk"
+          method="POST"
+          class="form-reserve"
+        >
           <div class="form-group">
             <input
               type="text"
@@ -301,74 +231,79 @@
               min="1"
               required
             />
-            <button type="submit" class="boton-reserva">RESERVAR MESA</button>
+            <button type="submit" class="reverse-button">RESERVAR MESA</button>
           </div>
         </form>
       </section>
-      <!-- Finaliza la sacción contacto -->
+      <!-- Finaliza la sección contacto -->
     </main>
     <!-- Fin del contenido principal -->
     <!-- Comienzo del pie de página -->
     <footer>
-      <div class="footer-container">
-        <div class="footer-col social-media">
-          <h3>Síguenos</h3>
-          <ul class="social-icons">
-            <li>
+      <!-- Comienza la sección redes sociales y contacto -->
+      <section class="social">
+        <div class="social-col">
+          <h4 class="social-title">Contacto</h4>
+          <p>
+            <strong>Dirección:</strong> Av. Principal 123, Bs. As., Argentina
+          </p>
+          <p><strong>Teléfono:</strong> +54 11 1234 5678</p>
+          <p><strong>Horario:</strong> 9:00 - 13:00, Lunes a Viernes</p>
+          <p>
+            <strong>Email:</strong
+            ><a href="mailto:info@burgerbros.com"> info@burger.com</a>
+          </p>
+          <div class="follow">
+            <h4 class="social-title">Seguinos</h4>
+            <div class="icon">
               <a
-                href="https://www.instagram.com/burgerbros_ok/"
+                href="https://www.facebook.com/burger_ok/"
                 target="_blank"
-                aria-label="Instagram de Burger Bros"
-                ><i class="fa-brands fa-instagram"></i
+                aria-label="Facebook de Burger Team"
+                ><i class="fab fa-facebook-f"></i
               ></a>
-            </li>
-            <li>
               <a
-                href="https://www.facebook.com/burgerbros_ok/"
+                href="https://twitter.com/burger_ok/"
                 target="_blank"
-                aria-label="Facebook de Burger Bros"
-                ><i class="fa-brands fa-facebook-f"></i
-              ></a>
-            </li>
-            <li>
-              <a
-                href="https://twitter.com/burgerbros_ok/"
-                target="_blank"
-                aria-label="X (Twitter) de Burger Bros"
+                aria-label="X (Twitter) de Burger Team"
                 ><i class="fa-brands fa-x-twitter"></i
               ></a>
-            </li>
-          </ul>
+              <a
+                href="https://www.instagram.com/burger_ok/"
+                target="_blank"
+                aria-label="Instagram de Burger Team"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a
+                href="https://www.youtube.com/burger_ok/"
+                target="_blank"
+                aria-label="YouTube de Burger Team"
+                ><i class="fab fa-youtube"></i
+              ></a>
+            </div>
+          </div>
         </div>
-        <div class="footer-col contact-info">
-          <h3>Contáctanos</h3>
-          <address>
-            <p>
-              <i class="fa-solid fa-phone"></i>
-              <a href="tel:+5491112345678">+54 9 11 1234-5678</a>
-            </p>
-            <p>
-              <i class="fa-brands fa-whatsapp"></i>
-              <a href="https://wa.me/5491112345678" target="_blank"
-                >+54 9 11 1234-5678</a
-              >
-            </p>
-            <p>
-              <i class="fa-solid fa-location-dot"></i> Av. Principal 123, Bs.
-              As., Argentina
-            </p>
-            <p>
-              <i class="fa-solid fa-envelope"></i>
-              <a href="mailto:info@burgerbros.com">info@burger.com</a>
-            </p>
-          </address>
+        <div class="social-col install">
+          <h4 class="social-title">Descargá la App</h4>
+          <p>Desde App Store o Google Play</p>
+          <div class="row">
+            <img src="./assets/img/app.jpg" alt="app-store" />
+            <img src="./assets/img/play.jpg" alt="google-play" />
+          </div>
+          <p>Formas de pago</p>
+          <img src="./assets/img/pay.png" alt="formas-pago" />
         </div>
-      </div>
-      <div class="footer-bottom">
-        <p>&copy; 2025 Burger. Todos los derechos reservados.</p>
-      </div>
+      </section>
+      <!-- Finaliza la sección redes sociales y contacto -->
+      <!-- Comienza la sección marca registrada -->
+      <section class="copyright">
+        <p>&copy; 2025 Burger Team. Todos los derechos reservados.</p>
+      </section>
+      <!-- Finaliza la sección marca registrada -->
     </footer>
     <!-- Fin del pie de página -->
-    <script src="./js/script.js"></script>
+    <!-- JavaScript -->
+    <script src="./js/navbar.js"></script>
+    <script src="./js/market.js"></script>
   </body>
 </html>

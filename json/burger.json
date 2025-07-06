@@ -1,0 +1,44 @@
+[
+  {
+    "código": "001",
+    "nombre": "Hamburguesa de Pollo",
+    "descripción": "Hunde tus dientes en la perfección atemporal de nuestra hamburguesa de pollo, una experiencia que nunca pasa de moda.",
+    "imagen": "./assets/img/order-1.jpg",
+    "precio": 11000
+  },
+  {
+    "código": "002",
+    "nombre": "Hamburguesa Veggie",
+    "descripción": "Disfruta los vibrantes sabores de nuestra hamburguesa veggie, una celebración de frescura y bondad.",
+    "imagen": "./assets/img/order-2.jpg",
+    "precio": 12900
+  },
+  {
+    "código": "003",
+    "nombre": "Hamburguesa BBQ",
+    "descripción": "Deléitate con una sinfonía de sabores ahumados y salados con nuestra Hamburguesa BBQ, a la parrilla y cubierta con tocino crujiente.",
+    "imagen": "./assets/img/order-3.jpg",
+    "precio": 13600
+  },
+  {
+    "código": "004",
+    "nombre": "Hamburguesa Doble Carne y Queso",
+    "descripción": "El doble de sabor, el doble de placer. Dos medallones de carne jugosa, fundidos con doble capa de queso cheddar.",
+    "imagen": "./assets/img/order-4.jpg",
+    "precio": 14875
+  },
+  {
+    "código": "005",
+    "nombre": "Hamburguesa con Huevo Frito",
+    "descripción": "Una explosión de sabor. Nuestra clásica hamburguesa de carne, coronada con un huevo frito perfecto y yema escurridiza.",
+    "imagen": "./assets/img/order-5.jpg",
+    "precio": 13500
+  },
+  {
+    "código": "006",
+    "nombre": "Hamburguesa Clásica",
+    "descripción": "La simplicidad perfecta. Carne de res, lechuga fresca, cebolla crujiente y queso derretido en un pan suave.",
+    "imagen": "./assets/img/order-6.jpg",
+    "precio": 10000
+  }
+]

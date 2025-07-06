@@ -5,53 +5,37 @@ header {
   left: 0;
   z-index: 1000;
   padding: 10px 0;
-  background-color: #ffffff;
+  background-color: var(--white-color);
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 /* Contenedor principal del menú de navegación*/
-#menu-navegacion {
+#menu-nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 15px;
-}
-
-/* Estilos del Logo */
-.logo {
-  display: flex;
-  align-items: center;
-  gap: 5px;
-}
-
-.logo img {
-  height: 30px;
-}
-
-.logo span {
-  display: none;
+  padding: 0 10px;
 }
 
 /* Estilos de los enlaces de navegación */
-.nav-links {
+.links-nav {
   display: none;
   flex-direction: column;
   width: 100%;
   position: absolute;
-  top: 45px;
+  top: 55px;
   left: 0;
-  background-color: #ffffff;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  background-color: var(--white-color);
   padding: 10px 0;
   z-index: 999;
 }
 
-.nav-links li {
+.links-nav li {
   text-align: center;
   margin: 8px 0;
 }
 
-.nav-links li a {
+.links-nav li a {
   color: var(--text-color);
   font-weight: 500;
   font-size: 1.1rem;
@@ -61,17 +45,17 @@ header {
   position: relative;
 }
 
-.nav-links li a:hover {
+.links-nav li a:hover {
   color: var(--main-color);
 }
 
 /* JavaScript - muestra el menú */
-.nav-links.active {
+.links-nav.active {
   display: flex;
 }
 
 /* Estilos para el icono de navegación */
-.menu-toggle {
+.toggle-nav {
   margin-left: auto;
   display: flex;
   flex-direction: column;
@@ -89,91 +73,97 @@ header {
   transition: all 0.3s ease-in-out;
 }
 
-.menu-toggle.active .bar:nth-child(2) {
+/* Animación para el icono de navegación */
+.toggle-nav.active .bar:nth-child(2) {
   opacity: 0;
 }
 
-.menu-toggle.active .bar:nth-child(1) {
+.toggle-nav.active .bar:nth-child(1) {
   transform: translateY(8px) rotate(45deg);
 }
 
-.menu-toggle.active .bar:nth-child(3) {
+.toggle-nav.active .bar:nth-child(3) {
   transform: translateY(-8px) rotate(-45deg);
 }
 
-/* Estilos del ícono */
-.nav-icons {
-  margin-left: 35px;
+/* Estilos para el ícono del carrito*/
+.icon-nav {
+  margin: 0 20px 0 15px;
+  position: relative;
 }
 
-.nav-icons i {
+.icon-nav i {
   font-size: 1.3rem;
   color: var(--text-color);
   transition: color 0.3s ease;
 }
 
-.nav-icons i:hover {
+.icon-nav i:hover {
   color: var(--main-color);
+}
+
+/* Estilos para el contador del carrito */
+.cart-count {
+  background-color: var(--black-color);
+  color: var(--white-color);
+  font-size: 0.7rem;
+  font-weight: bold;
+  text-align: center;
+  line-height: 1.2;
+  border-radius: 50%;
+  padding: 2px 4px;
+  position: absolute;
+  top: -12px;
+  right: -15px;
+  min-width: 18px;
 }
 
 /* Media Queries */
 @media (min-width: 460px) {
   /* Tablets */
-  .logo span {
-    display: block;
-    font-size: 1.1rem;
-    font-weight: bold;
-    color: var(--main-color);
+  #menu-nav {
+    padding: 0 20px;
   }
 }
 
 @media (min-width: 768px) {
   /* Laptop */
-  header {
-    padding: 15px 0;
+  #menu-nav {
+    padding: 0 30px 0 25px;
   }
 
-  #menu-navegacion {
-    padding: 0 40px;
-  }
-
-  .logo span {
-    font-size: 1.5rem;
-  }
-
-  .nav-links {
+  .links-nav {
     display: flex;
     position: static;
     width: auto;
     background-color: transparent;
     box-shadow: none;
-    padding: 0;
+    padding: 0px;
     border-top: none;
     flex-direction: row;
-    gap: 30px;
+    gap: 50px;
   }
 
-  .nav-links li a {
-    padding: 5px 0;
-    font-size: 1rem;
+  .links-nav li a {
+    padding: 2px 0;
   }
 
-  .nav-links li a::after {
+  .links-nav li a::after {
     content: "";
     position: absolute;
     width: 0;
-    height: 2px;
+    height: 3px;
     bottom: 0;
     left: 0;
     background-color: var(--main-color);
     transition: width 0.3s ease;
   }
 
-  .nav-links li a:hover::after {
+  .links-nav li a:hover::after {
     width: 100%;
   }
 
-  .menu-toggle {
+  .toggle-nav {
     display: none;
   }
 }
