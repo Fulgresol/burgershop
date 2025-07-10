@@ -147,6 +147,20 @@ document.addEventListener("DOMContentLoaded", function () {
     // Actualizar el total general
     actualizarTotalCarrito(subtotalCalculado);
   }
+
+  // Finalizar compra
+  document.getElementById("cart-pay").addEventListener("click", () => {
+    if (carrito.length > 0) {
+      alert("Compra finalizada. ¡Gracias por su pedido!");
+      carrito = [];
+      localStorage.removeItem("carritoDeCompras");
+      cargarProductosCarrito();
+      actualizarTotales();
+    } else {
+      alert("El carrito está vacío.");
+    }
+  });
+
   // Llamamos las funciones para que se ejecuten
   cargarProductosCarrito();
 });
